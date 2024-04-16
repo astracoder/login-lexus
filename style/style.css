@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -88,13 +88,51 @@ html, body {
 }
 
 .container__form {
+    width: 70%;
+    height: 100%;
+    padding: 4rem;
+    background: rgba(255,255,255,.1);
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.form__title {
+    margin-bottom: 4rem;
+}
+
 .form__input {
     display: flex;
     flex-direction: column;
+}
+
+.form__input label {
+    color: #fefefe;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.form__input input {
+    width: 35rem;
+    height: 4.5rem;
+    padding: 0 0rem;
+    margin-bottom:2rem;
+    padding: 1rem;
+    border: 0;
+}
+
+.form__cta .btn__cta {
+    color: #fefefe;
+    font-size: 1.6rem;
+    width: 35rem;
+    height: 4.5rem;
+    background: #1d3557;
+    border: 0;
+}
+
+.form__cta .btn__cta {
+
 }
