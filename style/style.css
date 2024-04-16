@@ -1,5 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    /* background: url('/assets/lexus');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.wave1 {
+    position: fixed;
+    left: 0;
+    bottom: 1%;
+}
+
+.wave2 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.lexus {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(.25rem);
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bg__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bg__img img {
+    width: 70rem;
+}
+
+.container__login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__login img {
+    width: 5rem;
+}
+
+.container__login h2 {
+    color: #fefefe;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.container__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
 }
