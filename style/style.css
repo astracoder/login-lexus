@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* DESKTOP SPECS */
+
 * {
     padding: 0;
     margin: 0;
@@ -60,9 +62,8 @@ html, body {
 
 .bg__img {
     width: 100%;
-    height: 100vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -77,7 +78,7 @@ html, body {
     font-weight: 300;
     margin-top: -17rem;
     margin-bottom: 2rem;
-    margin-left: 3rem;
+    margin-left: 0rem;
     text-align: left;
 }
 
@@ -95,7 +96,7 @@ html, body {
     border: .2rem solid rgba(255,255,255,.2);
     transition: .3s ease;
     cursor: pointer;
-    margin-left: 3rem;  
+    margin-left: 0rem;  
     border-radius: .3rem;
 }
 
@@ -105,20 +106,20 @@ html, body {
 
 .bg__img .paragraph{
     width: 100%;
-    margin-left: 6rem;
+    margin-left: 0rem;
     margin-top: 18rem;  
     text-align: left;
 }
 
-.bg__img p {
-    color: rgba(144, 144, 144, 0.933);
+.paragraph p {
+    color: rgba(116, 116, 116, 0.933);
     font-size: 1.4rem;
 }
 
 .container__login {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
@@ -128,10 +129,10 @@ html, body {
 
 .container__form {
     width: 70%;
-    padding: 4rem 0rem;
+    padding: 4rem;
     border-radius: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     flex-direction: column;
     background: rgba(0,0,0,.4);
@@ -150,12 +151,14 @@ html, body {
     color: #d2d2d2;
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 4rem;
-    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom: .1rem solid #5e5e5e;
+    border-radius: 1rem;
 }
 
 .form__input {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -166,6 +169,13 @@ html, body {
     font-weight: 300;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+.form__check {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .form__input input {
@@ -186,10 +196,12 @@ html, body {
 .form__check label {
     margin-left: .5rem;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .form__check input {
     width: 1.4rem;
+    margin-left: 3rem;
 }
 
 .form__input input::placeholder {
@@ -219,6 +231,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
+    text-align: center;
 }
 
 .form__cta .btn__login {
@@ -253,4 +266,461 @@ html, body {
 .form__cta .btn__register:hover {
     color: #404040;
     background: #dedede;
+}
+
+.form__cta .forgot {
+    color: #5c5c5c;
+    font-size: 1.4rem;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form__forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__cta i {
+    margin-top: .6rem;
+    color: #fefefe;
+    font-size: 1.4rem;
+}
+
+/* MOBILE SPECS */
+
+@media screen and (max-width: 1920px) {
+    .wave1 {
+        position: fixed;
+        left: -15%;
+        bottom: 2%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .bg__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .bg__img img {
+        width: 30rem;
+        margin-bottom: 10rem;
+    }   
+    
+    .bg__img h2 {
+        font-size: 2rem;
+        margin-top: -17rem;
+        margin-bottom: 2rem;
+        margin-left: 0rem;
+    }
+    
+    .bg__img .btn__machines {
+        font-size: 1.6rem;
+        width: 20rem;
+        height: 5rem;
+        margin-left: 0rem;
+    }
+
+    .container {
+        padding: 0rem 2rem;
+    }
+
+    .container__login {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__form {
+        width: 70%;
+        padding: 4rem 0rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(0,0,0,.4);
+        border: .1rem solid rgba(255,255,255,.1)
+    }
+    
+    .form__title {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #fefefe;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    
+    .form__paragraph {
+        color: #d2d2d2;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: .1rem solid #5e5e5e;
+        border-radius: 1rem;
+    }
+    
+    .form__input {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form__input label, .form__check label {
+        color: #fefefe;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    
+    .form__check {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    
+    .form__input input {
+        width: 100%;
+        color: #fefefe;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 50rem;
+        height: 4.5rem;
+        padding: 0 0rem;
+        padding: 1rem;
+        border: 0;
+        border-bottom: .1rem solid #fefefe;
+        background: transparent;
+        transition: .3s ease;
+        margin-bottom: 4rem;
+    }
+    
+    .form__check label {
+        margin-left: .5rem;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .form__check input {
+        width: 1.4rem;
+        margin-left: 3rem;
+    }
+    
+    .form__input input::placeholder {
+        color: #dcdcdc;
+        font-size: 1.5rem;
+    }
+    
+    .form__input input:focus {
+        border-bottom: .3rem solid #8fbeff;
+    }
+    
+    .form__input .group__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .group__input i {
+        color: #004ebb;
+        font-size: 2.8rem;
+        margin-right: 2rem;
+        margin-top: -4rem;
+    }
+    
+    .form__cta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .form__cta .btn__login {
+        color: #fefefe;
+        font-size: 1.6rem;
+        width: 35rem;
+        height: 4.5rem;
+        background: #004ebb;
+        border: 0;
+        transition: .3s ease;
+        cursor: pointer;
+        margin-top: 3rem;
+        border-radius: .3rem;
+    }
+    
+    .form__cta .btn__login:hover {
+        background: #006aff;
+    }
+    
+    .form__cta .btn__register {
+        color: #404040;
+        font-size: 1.6rem;
+        width: 35rem;
+        height: 4.5rem;
+        background: rgba(255,255,255,.5);
+        border: .2rem solid rgba(255,255,255,.2);
+        transition: .3s ease;
+        cursor: pointer;
+        border-radius: .3rem;
+    }
+    
+    .form__cta .btn__register:hover {
+        color: #404040;
+        background: #dedede;
+    }
+    
+    .form__cta .forgot {
+        color: #5c5c5c;
+        font-size: 1.4rem;
+        margin-left: .5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .form__forgot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form__cta i {
+        margin-top: .6rem;
+        color: #fefefe;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .wave1 {
+        position: fixed;
+        left: -15%;
+        bottom: 0%;
+    }
+    
+    .wave2 {
+        position: fixed;
+        left: 0;
+        bottom: -5%;
+    }
+
+    .bg__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .bg__img img {
+        width: 30rem;
+        margin-bottom: 10rem;
+    }   
+    
+    .bg__img h2 {
+        font-size: 2rem;
+        margin-top: -17rem;
+        margin-bottom: 2rem;
+        margin-left: 0rem;
+    }
+    
+    .bg__img .btn__machines {
+        font-size: 1.6rem;
+        width: 20rem;
+        height: 5rem;
+        margin-left: 0rem;
+    }
+
+    .container {
+        padding: 0rem 2rem;
+    }
+
+    .container__login {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__form {
+        width: 70%;
+        padding: 4rem 0rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(0,0,0,.4);
+        border: .1rem solid rgba(255,255,255,.1)
+    }
+    
+    .form__title {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #fefefe;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    
+    .form__paragraph {
+        color: #d2d2d2;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: .1rem solid #5e5e5e;
+        border-radius: 1rem;
+    }
+    
+    .form__input {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form__input label, .form__check label {
+        color: #fefefe;
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    
+    .form__check {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    
+    .form__input input {
+        width: 100%;
+        color: #fefefe;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 50rem;
+        height: 4.5rem;
+        padding: 0 0rem;
+        padding: 1rem;
+        border: 0;
+        border-bottom: .1rem solid #fefefe;
+        background: transparent;
+        transition: .3s ease;
+        margin-bottom: 4rem;
+    }
+    
+    .form__check label {
+        margin-left: .5rem;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .form__check input {
+        width: 1.4rem;
+        margin-left: 3rem;
+    }
+    
+    .form__input input::placeholder {
+        color: #dcdcdc;
+        font-size: 1.5rem;
+    }
+    
+    .form__input input:focus {
+        border-bottom: .3rem solid #8fbeff;
+    }
+    
+    .form__input .group__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .group__input i {
+        color: #004ebb;
+        font-size: 2.8rem;
+        margin-right: 2rem;
+        margin-top: -4rem;
+    }
+    
+    .form__cta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .form__cta .btn__login {
+        color: #fefefe;
+        font-size: 1.6rem;
+        width: 35rem;
+        height: 4.5rem;
+        background: #004ebb;
+        border: 0;
+        transition: .3s ease;
+        cursor: pointer;
+        margin-top: 3rem;
+        border-radius: .3rem;
+    }
+    
+    .form__cta .btn__login:hover {
+        background: #006aff;
+    }
+    
+    .form__cta .btn__register {
+        color: #404040;
+        font-size: 1.6rem;
+        width: 35rem;
+        height: 4.5rem;
+        background: rgba(255,255,255,.5);
+        border: .2rem solid rgba(255,255,255,.2);
+        transition: .3s ease;
+        cursor: pointer;
+        border-radius: .3rem;
+    }
+    
+    .form__cta .btn__register:hover {
+        color: #404040;
+        background: #dedede;
+    }
+    
+    .form__cta .forgot {
+        color: #5c5c5c;
+        font-size: 1.4rem;
+        margin-left: .5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .form__forgot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form__cta i {
+        margin-top: .6rem;
+        color: #fefefe;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and(min-width: 1024px){
+        
+}
+
+@media screen and(min-width: 768px){
+        
 }

@@ -23,11 +23,11 @@
                 </a>
             </div>
             <div class="paragraph">
-                <p>&copy; All rights reserved - Lexus</p>
+                <p>&copy; All rights reserved - 2006-2023 Lexus, a Division of Toyota Motor Sales, U.S.A., Inc.</p>
             </div>
         </div>
         <div class="container__login">
-            <form class="container__form" action="#">
+            <form class="container__form" action="#" method="post">
                 <img src="assets/lexusLogo.svg" alt="Lexus Logo">
                 <h2 class="form__title">Come in and see the truth</h2>
                 <p class="form__paragraph">Fill in the fields to log in to the Lexus Store.</p>
@@ -35,7 +35,7 @@
                     <label for="email">E-mail</label>
                     <div class="group__input">
                         <i class="bi bi-person-circle"></i>
-                        <input class="form__input__email" name="email" type="e-mail" placeholder="Type your e-mail...">
+                        <input class="form__input__email" name="email" type="email" placeholder="Type your e-mail..." required>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@
                     <label for="password">Password</label>
                     <div class="group__input">
                         <i class="bi bi-shield-lock-fill"></i>
-                        <input class="form__input__email" name="password" type="password" placeholder="Type yout password...">
+                        <input class="form__input__email" name="password" type="password" placeholder="Type your password..." required>
                     </div>
                 </div>
 
@@ -51,9 +51,19 @@
                     <input name="remember" type="checkbox">
                     <label for="remember">Remember password</label>
                 </div>
+
+                <div class="form__check">
+                    <input name="newsAndPromotional" type="checkbox">
+                    <label for="newsAndPromotional">Receive news and promotions</label>
+                </div>
+
                 <div class="form__cta">
                     <input class="btn__login" type="submit" value="Log in">
                     <input class="btn__register" type="submit" value="Register">
+                    <div class="form__forgot">
+                        <i class="bi bi-unlock"></i>
+                        <p class="forgot">I forgot my password</p>
+                    </div>
                 </div>
             </form>
         </div>
